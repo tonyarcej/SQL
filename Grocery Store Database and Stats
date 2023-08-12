@@ -1,0 +1,25 @@
+--Create a grocery store database
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, born TEXT, price INTEGER);
+INSERT INTO store VALUES (1, "ILLENIUM", 1, "CALIFORNIA" , 100);
+INSERT INTO store values (2, "FISHER", 2, "Australia", 95);
+INSERT INTO store values (3, "GRYFFIN", 3, "Nevada", 90);
+INSERT INTO store values (4, "RUNN", 4, "Unknown", 92);
+INSERT into store values (5, "Seven Lions", 5, "CALIFORNIA", 97);
+INSERT INTO store values (6, "Deathpact", 6, "Unknown", 84);
+INSERT INTO store values (7, "REZZ", 7, "Ukraine", 99);
+Insert into store values (8, "deadmau5", 8, "Canada", 77);
+INSERT into store values (9, "Slushii", 9, "New Jersey", 55);
+Insert into store values (10, "San Holo", 10, "Netherlands", 23);
+INSERT into store values (11, "Jai Wolf", 11, "Bangladesh", 54);
+INSERT into store values (12, "Kompany", 12, "Los Angeles", 82);
+INSERT into store values (13, "Ray Volpe", 13, "New York", 71);
+Insert into store values (14, "Alison Wonderland", 14, "Australia", 98);
+Insert into store values (15, "BTS", 15, "Korea", 90);
+
+--display the database ordered by price. 
+SELECT * FROM store
+ORDER BY price asc;
+
+--display the database ordered by items only born in a certain location
+SELECT * FROM store WHERE born = "CALIFORNIA";
